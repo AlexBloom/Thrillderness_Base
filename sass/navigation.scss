@@ -1,6 +1,6 @@
 
 #site-header{
-	@extend %clearfix;
+	
 	font-family:$heading-font-family;
 	font-size:$base-font-size;
 	padding:0;
@@ -13,22 +13,36 @@
 	right:0;
 	a{
 		display:block;
+		padding:1em;
+		text-decoration:none;
+		&.active{
+			color:$brand-color-primary;
+			//background-color:$b10;
+		}
 	}
 	#logo{
 		float:left;
 		font-size:2em;
 		text-decoration:none;
 		margin:0;
-		padding:.1em .25em;
+		padding:.1em .5em;
+		span{
+			font-size:1em;
+		}
 	}
 	nav#primary{
 		float:left;
+		font-weight:600;
 		ul{
 			li{
 				float:left;
 				a{
+					color:$black;
 					padding:1em 1em;
-					//border-bottom:1px solid $grey-light;				
+					//border-bottom:1px solid $grey-light;
+					&:hover{
+						color:$brand-color-primary;
+					}				
 				}
 			}
 		}
@@ -39,8 +53,10 @@
 			box-shadow:0 2px 0 0 $black;
 		}
 	}
-	#search-toggle{
-		
+	#toggle-search-primary{
+		position:absolute;
+		right:0;
+		top:0;
 	}
 }
 #menu-primary{
@@ -54,7 +70,7 @@
 		background-color:$white;
 		@include quarter-sec-trans;		
 		&.fixed{
-			padding:6em 10%;
+			padding:0 10%;
 			position:fixed;
 			top:0;
 			bottom:100%;
@@ -63,8 +79,10 @@
 			opacity:0;
 		}
 		&.open{
+			padding:6em 10%;
 			bottom:0;
 			opacity:1;
+			z-index:996;
 		}
 		nav{
 			width:100%;
@@ -116,7 +134,118 @@
 			
 }
 
-#search{
-	
+#search-primary{
+	position:fixed;
+	top:0;
+	right:0;
+	left:0;
+	max-height:0;
+	padding:0;
+	z-index:997;
+	background-color:$white;
+	color:$grey-dark;
+	overflow:hidden;
+	@include tenth-sec-trans;
+	&.open{
+		max-height:100%;
+		bottom:0;
+		padding:6em 0;
+		overflow-y:scroll;
+		
+	}
+	@media screen and (min-width:$tablet){
+		
+	}
+	form{
+		
+		display:block;
+		@extend %clearfix;
+		width:100%;
+		max-width:(em(600));
+		margin:0 auto;
+		//font-size:2em;
+		position:relative;
+		.screen-reader-text{
+			@extend %visuallyhidden;
+		}
+		input{
+			padding:.25em .5em;
+		}
+		#search-field-primary{
+			font-size:2em;
+			border:none;
+			background-color:transparent;
+			outline:none;
+			width:85%;
+			
+			margin:0 auto;
+		}
+		#search-submit-primary{			
+			font-weight:600;
+			display:block;
+		    position:absolute;
+			text-transform:uppercase;
+			font-size:1em;
+			top:0;
+			right:0;
+			padding:1em;
+		}
+	}
+}
+
+
+#site-footer{
+	text-align:center;
+	background-color:$b90;
+	color:$w80;
+	font-family:$sans-font-family;
+	font-weight:600;
+	color:$grey;
+	section{
+		clear:both;
+		.arrow{color:$brand-color-primary;}
+		.wordmark{color:$white;}
+		.tagline{
+			color:$grey;
+			font-size:$base-font-size *1.25;
+		}
+		.copyright{
+			font-family:$text-font-family;
+			font-weight:400;
+		}
+	}
+	li{
+		a{
+			color:$grey;
+			display:block;
+			padding:1em .5em;
+			&:hover{
+				color:$brand-color-primary;
+			}
+		}
+	}
+	#footer-nav{
+		@media screen and (min-width:$tablet){
+			float:left;	
+		}
+		li{
+			float:left;
+			width:100%;
+			@media screen and (min-width:$phablet){
+				width:auto;
+			}
+		}
+	}
+	#social-nav{
+		@media screen and (min-width:$tablet){
+			float:right;
+			li{
+				float:left;
+			}
+		}
+		li{
+			display:inline-block;
+		}
+	}
 }
 

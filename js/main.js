@@ -8,5 +8,11 @@ $(document).ready(function(){
 		$(this).toggleClass('active');
 	});
 	
+    // Open Search on Toggle
+	$("#toggle-search-primary").click(function(){
+		$("#search-primary").toggleClass('open');
+		$(this).toggleClass('active');
+	});
+	
 }); // Close Doc Ready Func
 

@@ -39,8 +39,35 @@ button{}
 
 
 /* ====================== Forms & Inputs */
-form{}
-input{}
+form{
+	font-family:$sans-font-family;
+	font-size:$base-font-size;
+}
+input{
+	font-family:$sans-font-family;
+	font-size:1em;
+	outline:none;
+	border:none;
+	color:$grey-dark;
+}
+input[type=text]{
+	
+}
+input[type=search]{
+	
+}
+input[type=submit]{
+	background-color:$brand-color-primary;
+	color:$white;
+	cursor:pointer;
+	letter-spacing:.1em;
+	&:hover{
+		box-shadow:0 2px 2px 0 $b20;
+	}
+	&:active{
+		background-color:$black;
+	}
+}
 label {
     float: left;
     text-align: right;

@@ -1,6 +1,7 @@
         
-        <footer>
-			<nav id="secondary"> 
+        <footer id="site-footer">
+			
+			<nav id="footer-nav"> 
 				<ul>
 					<li> <a href="">FAQ</a> </li>
 					<li> <a href="">WTF</a> </li>
@@ -8,7 +9,8 @@
 					<li> <a href="">CONTACT</a> </li>
 				</ul>
 			</nav>
-			<nav id="social">
+			
+			<nav id="social-nav">
 				<ul>
 					<li> <a href="http://mailchimp.com/">SUBSCRIBE</a> </li>
 					<li> <a href="http://twitter.com/thrillderness"><span class="icon-twitter"></span></a> </li>
@@ -17,9 +19,15 @@
 					<li> <a href="http://thrillderness.org/feed"><span class="icon-rss"></span></a> </li>
 				</ul>
 			</nav>
-			<hr />
-			<h2>Reviving endangered knowledge. Building a community. Having a blast.</h2>
-            <p class="copyright"> &copy;2015 All rights reserved. </p>
+			
+			<!-- <hr /> -->
+			<section>
+				<h1 class="arrow"> <span class="icon-up"></span> <br /> </h1>
+				<h2 class="wordmark"> <span class="icon-Thrillderness"></span> </h2>	
+				<h2 class="tagline">Reviving endangered knowledge. Building a community. Having a blast.</h2>
+	            <p  class="copyright"> &copy;2015 All rights reserved. </p>
+			</section>
+			
         
 		</footer>
 

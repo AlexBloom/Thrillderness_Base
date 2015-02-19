@@ -1,6 +1,6 @@
 		<script src="//use.typekit.net/jlv0gcd.js"></script>
 		<script>try{Typekit.load();}catch(e){}</script>
-
+		<link rel="stylesheet" href="http://i.icomoon.io/public/temp/961fab5e9a/Thrillderness/style.css">
         <link rel="stylesheet" href="css/main.css"> <!-- Advanced & Browser Dependent -->
 
    </head>
@@ -8,7 +8,8 @@
 
         <header id="site-header">
         	<a href="index" id="logo">
-        		<strong>Thrillderness</strong>
+        		<!-- <strong>Thrillderness</strong> -->
+				<span class="icon-Thrillderness"> </span>
         	</a>
 			<nav id="primary">
         		<ul> 
@@ -18,10 +19,9 @@
 					<li> <a href="contact"> Contact </a> </li>
 				</ul>
 			</nav>
-			<a href="" id="search-toggle">
-				Search <span class="icon-search"> </span>
+			<a href="#" id="toggle-search-primary">
+				 <span class="icon-search"> </span>
 			</a>
-  
 		</header>
 		
 		<div id="menu-primary">
@@ -37,9 +37,15 @@
 			<nav id="tags">
 				<ul>
 					<li> <a href=""> Bikepacking </a> </li>
-					<li> <a href=""> Bikepacking </a> </li>
-					<li> <a href=""> Bikepacking </a> </li>
-					<li> <a href=""> Bikepacking </a> </li>
+					<li> <a href=""> Mountaineering </a> </li>
+					<li> <a href=""> Trad Climbing </a> </li>
+					<li> <a href=""> Trail Running </a> </li>
+					<li> <a href=""> Sick Rigs </a> </li>
 				</ul>
 			</nav>
+		</div>
+		
+		
+		<div id="search-primary"> 
+		     <?php include_once'inc/searchform.inc' ?>
 		</div>

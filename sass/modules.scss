@@ -27,35 +27,6 @@
   margin: auto;
 }
 
-// Articles, Text Content
-
-article{
-	width:100%;
-	float:left;
-	//max-width:(em(900));
-	header{
-		width:100%;
-		padding:1em;
-	}
-	section{
-		padding:1em;
-		max-width:(em(800));
-		margin:0 auto;
-	}
-	@media screen and (min-width:(em(800))){
-		
-	}
-}
-
-//#sidebar{
-//	width:100%;
-//	@media screen and (min-width:(em(800))){
-//		float:left;
-//		max-width:(em(300));
-//		padding:0 1em;
-//	}
-//}
-
 
 
 // Swipe Classes

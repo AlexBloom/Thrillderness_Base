@@ -1,2 +1,2 @@
 //Add Fixed Class to Menu
-$("#menu-primary").addClass("fixed");$(document).ready(function(){$("#toggle-menu-primary").click(function(){$("#menu-primary").toggleClass("open");$(this).toggleClass("active")})});
+$("#menu-primary").addClass("fixed");$(document).ready(function(){$("#toggle-menu-primary").click(function(){$("#menu-primary").toggleClass("open");$(this).toggleClass("active")});$("#toggle-search-primary").click(function(){$("#search-primary").toggleClass("open");$(this).toggleClass("active")})});

@@ -2,23 +2,90 @@
  * Layout
  */
 
+body{
+	padding-top:3.5rem;
+}
+
 div#main{
 	
 }
+// Clears
+header, footer, section, article, aside{
+	@extend %clearfix;
+}
+
+
 
 //Articles for Posts & Pages
 article{
+	position:relative;
 	header{
+		position:relative;
+		background-color:$grey-light;
+		color:$black;
+		padding:$spacing-unit $spacing-unit;
+	}
+	.featured-image{
+		display:block;
+		width:400px;
+		height:400px;
+		@include circle;
+		padding:0;
+		margin:$spacing-unit auto;
+		overflow:hidden;
+		background-color:blue;
+	}
+	.category-link{
+		font-family:$sans-font-family;
+		text-transform:uppercase;
+		text-decoration:none;
+		font-weight:800;
+		letter-spacing:.1em;
+		color:$white;
+		display:block;
+		position:absolute;
+		top:0;
+		left:0;
+		padding:.5em;
+		background-color:$brand-color-primary;
+		width:auto;
+	}
+	.title{
+		text-transform:uppercase;
+	}
+	.subtitle{
 		
 	}
+	a.author{}
+	a.date{}
+	
 	aside{
+		//font-size:1rem;
+		//line-height:30px;
+	}
+	section.content{
 		
 	}
 	footer{
 		
 	}
-	section, div{
-		max-width:(em(700));
+	section, div, aside{
+		max-width:(emscaled(680));
+		margin:0 auto;
+		padding:$spacing-unit;
+		@media screen and (min-width:$phablet){
+			//padding:$spacing-unit $spacing-unit *2;
+		}
+		
+	}
+	@media screen and (min-width:$laptop){
+		//aside{
+		//	float:left;
+		//	width:(em(200))
+		//}
+		//section{
+		//	float:left;
+		//}
 	}
 }
 
