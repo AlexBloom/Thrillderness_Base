@@ -4,6 +4,7 @@ a {
     color: $black;
     text-decoration: underline;
 	outline:none;
+	cursor:pointer;
     &:visited {
 		color:$grey;
 		&:hover{

@@ -3,14 +3,14 @@
  */
 
 body{
-	padding-top:3.5rem;
+	padding-top:3rem;
 }
 
 div#main{
 	
 }
 // Clears
-header, footer, section, article, aside{
+header, footer, section, article, aside, ul{
 	@extend %clearfix;
 }
 
@@ -24,6 +24,7 @@ article{
 		background-color:$grey-light;
 		color:$black;
 		padding:$spacing-unit $spacing-unit;
+		text-align:center;
 	}
 	.featured-image{
 		display:block;
@@ -41,14 +42,15 @@ article{
 		text-decoration:none;
 		font-weight:800;
 		letter-spacing:.1em;
-		color:$white;
-		display:block;
-		position:absolute;
-		top:0;
-		left:0;
-		padding:.5em;
-		background-color:$brand-color-primary;
+		color:$black;
+		//display:block;
+		//position:absolute;
+		//top:0;
+		//left:0;
+		padding:.25em 0;
+		//background-color:$brand-color-primary;
 		width:auto;
+		border-bottom:5px solid $black;
 	}
 	.title{
 		text-transform:uppercase;
